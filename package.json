@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Rahul Kushwaha",
+    "email": "rahul7926963@gmail.com",
+    "url": "https://github.com/stayrahul"
   },
   "description": "Modern & Minimalist Next.js Portfolio.",
   "keywords": [
@@ -54,54 +54,47 @@
     "html",
     "css"
   ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sanidhyy/next-portfolio.git"
-  },
-  "homepage": "https://github.com/sanidhyy/next-portfolio#readme",
-  "bugs": {
-    "url": "https://github.com/sanidhyy/next-portfolio/issues",
-    "email": "sanidhya.verma12345@gmail.com"
-  },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
-  ],
   "dependencies": {
-    "@react-three/drei": "^9.105.6",
-    "@react-three/fiber": "^8.16.6",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "axios": "^1.9.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.2.6",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.503.0",
     "mini-svg-data-uri": "^1.4.4",
-    "next": "14.2.15",
+    "next": "^14.2.15",
     "next-themes": "^0.3.0",
+    "openai": "^4.96.0",
     "react": "^18",
+    "react-chatbot-kit": "^2.2.2",
     "react-dom": "^18",
-    "react-icons": "^5.2.1",
+    "react-draggable": "^4.4.6",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^5.5.0",
     "react-lottie": "^1.2.4",
+    "react-parallax-tilt": "^1.7.293",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.164.1",
-    "three-globe": "^2.31.0"
+    "three": "^0.159.0",
+    "three-globe": "^2.31.0",
+    "tsparticles": "^3.8.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-lottie": "^1.2.10",
+    "@types/react-slick": "^0.23.13",
+    "autoprefixer": "^10.4.21",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "eslint-plugin-unused-imports": "^3.2.0",
-    "postcss": "^8",
+    "postcss": "^8.5.3",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
 }

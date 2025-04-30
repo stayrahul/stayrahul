@@ -1,27 +1,58 @@
-import { Approach } from "@/components/approach";
-import { Clients } from "@/components/clients";
-import { Experience } from "@/components/experience";
-import { Footer } from "@/components/footer";
-import { Grid } from "@/components/grid";
-import { Hero } from "@/components/hero";
-import { FloatingNav } from "@/components/ui/floating-nav";
-import { RecentProjects } from "@/components/recent-projects";
-import { navItems } from "@/data";
+import React from "react";
 
+import { Hero } from "@/components/hero";
+import { Grid } from "@/components/grid";
+
+import Education from "@/components/education";
+import { Lang } from "@/components/lang";
+import Skills from "@/components/Skills";
+import { Hobbies } from "@/components/Hobbies";
+import { RecentProjects } from "@/components/recent-projects";
+import { Achievements } from "@/components/Achievements";
+import { Gallery } from "@/components/Gallery";
+import { DevicesSection } from "@/components/DevicesSection";
+import { Experience } from "@/components/experience";
+import { ReachOut } from "@/components/ReachOut";
+import SocialMediaSection from "@/components/SocialMediaSection";
+import { Contact } from "@/components/contact";
+import ThankYouSection from "@/components/ThankYouSection";
+import GitHubStats from "@/components/GitHubStats";
+import FunFacts from "@/components/FunFacts";
+import { Footer } from "@/components/footer";
+import { FloatingNav } from "@/components/ui/floating-nav";
+import { navItems } from "@/data";
 const MainPage = () => {
   return (
-    <main className="relative mx-auto flex flex-col items-center justify-center overflow-clip bg-black-100 px-5 sm:px-10">
+    <main className="relative mx-auto flex flex-col items-center justify-center overflow-hidden bg-black-100 px-5 sm:px-10">
+      {/* Floating Navbar */}
       <FloatingNav navItems={navItems} />
 
-      <div className="w-full max-w-7xl">
+      {/* Page Content */}
+      <div className="w-full max-w-7xl space-y-10">
         <Hero />
         <Grid />
+        <Education />
+        <Lang />
+        <Skills />
+        <Hobbies />
         <RecentProjects />
-        <Clients />
+        <Achievements />
+        <Gallery />
+        <DevicesSection />
         <Experience />
-        <Approach />
-        <Footer />
+        <FunFacts />
+        <GitHubStats />
+
+        <ReachOut />
+        <SocialMediaSection />
+        <Contact />
+        <ThankYouSection />
+     
+
       </div>
+
+      {/* Footer is outside content container for full width if needed */}
+      <Footer />
     </main>
   );
 };

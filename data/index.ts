@@ -1,224 +1,220 @@
 import { links } from "@/config";
 
+
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "Home", link: "#home" },
+  { name: "Gallery", link: "#gallery" },
+  { name: "Contact", link: "#contact" }
 ] as const;
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Class 11 Student | Exploring the World of Web Development",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
+    className: "lg:col-span-3 md:col-span-4 md:row-span-3 lg:min-h-[25vh] min-h-[15vh] flex items-center justify-center",
+    imgClassName: "absolute inset-0 w-full h-full object-cover", // Cover the whole box
+    titleClassName: "relative z-10 text-lg font-semibold text-center text-white",
     img: "/b1.svg",
     spareImg: "",
   },
+  
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Turning Curiosity Into Real-World Projects",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 min-h-[15vh] flex items-center justify-center",
+    imgClassName: "absolute right-1 bottom-1 w-24 md:w-28",
+    titleClassName: "relative z-10 text-md font-semibold text-center text-gray-100",
     img: "",
     spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
   },
 
   {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
+    id: 3,
+    title: "Building My Tech Toolbox",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-1.5 md:col-span-2 md:row-span-1.5 min-h-[12vh] flex items-center justify-center",
     imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    titleClassName: "relative z-10 text-sm font-medium text-center text-aqua-500",
     img: "",
     spareImg: "",
   },
+  
+  {
+    id: 4,
+    title: "Coding Dreams Into Reality ✨",
+    description: "",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[12vh] flex items-center justify-center",
+    imgClassName: "",
+    titleClassName: "relative z-10 text-lg font-semibold text-center text-teal-400",
+    img: "/grid.svg",
+    spareImg: "/b4.svg",
+  },
+  
+  {
+    id: 5,
+    title: "Crafting My Personal Website",
+    description: "",
+    className: "lg:col-span-3 md:col-span-3 md:row-span-1 min-h-[12vh] flex items-center justify-center",
+    imgClassName: "absolute right-1 bottom-1 w-24 md:w-28",
+    titleClassName: "relative z-10 text-md font-semibold text-center text-yellow-300",
+    img: "/b5.svg",
+    spareImg: "/grid.svg",
+  },
+  
+  {
+    id: 6,
+    title: "Let's Build and Learn Together 🚀",
+    description: "",
+    className: "lg:col-span-3 md:col-span-3 md:row-span-2 min-h-[12vh] flex items-center justify-center",
+    imgClassName: "absolute right-1 bottom-1 w-24 md:w-28",
+    titleClassName: "relative z-10 text-lg font-bold text-center text-pink-500",
+    img: "",
+    spareImg: "",
+  },
+  
+  {
+    id: 7,
+    title: "Exploring the World of Web Development",
+    description: "",
+    className: "relative lg:col-span-2 md:col-span-2 md:row-span-2 min-h-[12vh] flex items-center justify-center text-center",
+    imgClassName: "absolute inset-0 w-full h-full object-cover opacity-20",
+    titleClassName: "relative z-10 text-md font-medium text-center text-aqua-500",
+    img: "/footer-grid.svg", // Background image for ID 7
+    spareImg: "",
+  },
 ] as const;
+
+
+
+
+
+export const Achievements = [
+  {
+    id: 1,
+    title: "Microsoft AI Program Completion",
+    description:
+      "Successfully participated in the Microsoft AI program, gaining hands-on experience in AI concepts such as machine learning, neural networks, and NLP.",
+    thumbnail: "/ai.svg", // Example image path for achievement
+  },
+  {
+    id: 2,
+    title: "Code Alpha Full Stack Development Internship",
+    description:
+      "Selected for a competitive internship at Code Alpha, focusing on full stack development with React, Node.js, and MongoDB.",
+    thumbnail: "/code.svg", // Example image path for achievement
+  },
+  {
+    id: 3,
+    title: "Web Development Project",
+    description:
+      "Developed and deployed a personal portfolio website using HTML, CSS, JavaScript, and React.js to showcase skills and projects.",
+     
+      
+    thumbnail: "/web-dev-logo.svg", // Example image path for achievement
+    
+  },
+  {
+    id: 4,
+    title: "AI Chatbot Development",
+    description:
+      "Created an AI-powered chatbot using Python and TensorFlow, capable of answering user queries and providing information.",
+    thumbnail: "/chat.svg", // Example image path for achievement
+  },
+];
+
+
 
 export const projects = [
   {
     id: 1,
-    title: "FigPro - Collaborative Design Tool",
-    des: "A collaborative design tool with real-time collaboration, vector editing, and a responsive UI.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://clone-figmaa.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/figma-clone",
-  },
-  {
-    id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Rabindra Kushwaha - Portfolio",
+    des: "A portfolio website showcasing my work and skills, built with HTML, CSS, JavaScript, and PHP.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://clone-yoom.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/zoom-clone",
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/php.svg"],
+    link: "https://www.rabindrakushwaha.com.np",
+    sourceCode: "https://github.com/stayrahul/rabindrakushwaha",
   },
+
   {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://ai-imaginify.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/imaginify",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://app-iphone.netlify.app",
-    sourceCode: "https://github.com/sanidhyy/apple-clone",
-  },
+    id: "chatbot",
+    title: "ChatBot",
+    des: "A conversational AI chatbot using natural language understanding. Built with modern web tools and deployed for real-time interaction.",
+    img: "/vercel1.svg", // Add an image for preview (place in your public/projects folder)
+    iconLists: [
+      "/re.svg",
+      "/git.svg",
+      "/node1.svg",
+    ],
+    link: "https://my-awesome-chatbot-two-xi.vercel.app", // Optional live demo URL (replace if you deploy it)
+    sourceCode: "https://github.com/stayrahul/ChatBot"
+  }
+ 
 ] as const;
 
 export const testimonials = [
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Every expert was once a beginner. I'm just getting started, and the best is yet to come.",
+    name: "Rahul Kushwaha",
+    position: "Frontend Developer",
+    img: "/rahul.svg",
+    title: "Student with a passion for coding",
+    className: "md:col-span-2",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "I believe in the power of technology to change lives. I'm here to make a difference, one line of code at a time.",
+    name: "Rahul Kushwaha",
+    position: "Frontend Developer",
+    img: "/rahul.svg",
+    title: "Student with a passion for coding",
+    className: "md:col-span-2",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: "Coding is not just a skill; it's a way of thinking. I'm learning to think like a developer.",
+    name: "Rahul Kushwaha",
+    position: "Frontend Developer",
+    img: "/rahul.svg",
+    title: "Student with a passion for coding",
+    className: "md:col-span-2",
   },
-  {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-] as const;
+];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-] as const;
+
+
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Aspiring Frontend Developer",
+    desc: "Learning to build beautiful and responsive websites with React.js — turning passion into projects and theory into real-world code.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Exploring Mobile App Development",
+    desc: "Experimenting with React Native to create mobile apps — combining my love for technology and gaming into real app experiences.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Freelance Journey — Real World Coding",
+    desc: "Worked on freelance projects, bringing client ideas to life. Learned teamwork, deadlines, and delivering real results — all while growing as a developer.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Blending Gaming Passion with Development",
+    desc: "Led frontend design for a team project, crafting interactive experiences inspired by gaming UIs and social media creativity.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
+ 
 ] as const;
 
-export const socialMedia = [
-  {
-    name: "GitHub",
-    img: "/git.svg",
-    link: "https://github.com/sanidhyy",
-  },
-  {
-    name: "Twitter",
-    img: "/twit.svg",
-    link: "https://twitter.com/TechnicalShubam",
-  },
-  {
-    name: "LinkedIn",
-    img: "/link.svg",
-    link: "https://www.linkedin.com/in/sanidhyy",
-  },
-] as const;
 
 export const techStack = {
   stack1: ["React.js", "Next.js", "Typescript"],

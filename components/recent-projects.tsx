@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
-
 import { PinContainer } from "./ui/3d-pin";
 
 export const RecentProjects = () => {
@@ -14,79 +12,77 @@ export const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
 
-      <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">
-        {projects.map(
-          ({ id, des, iconLists, img, link, sourceCode, title }) => (
-            <div
-              key={id}
-              className="flex h-[32rem] w-[90vw] items-center justify-center sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem]"
-            >
-              <PinContainer title="Visit" href={link}>
-                <div className="relative mb-10 flex h-[30vh] w-[80vw] items-center justify-center overflow-hidden sm:h-[40vh] sm:w-[570px]">
-                  <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
-                    <Image
-                      height={330}
-                      width={552}
-                      src="/bg.png"
-                      alt="bg-img"
-                    />
-                  </div>
-
+      <div className="mt-10 flex flex-wrap items-center justify-center gap-x-12 gap-y-8 p-4">
+        {projects.map(({ id, des, iconLists, img, link, sourceCode, title }) => (
+          <div
+            key={id}
+            className="flex h-[22rem] w-[75vw] items-center justify-center sm:h-[30rem] sm:w-[400px] lg:min-h-[25rem]"
+          >
+            <PinContainer title="Visit Project" href={link}>
+              <div className="relative mb-6 flex h-[20vh] w-[65vw] items-center justify-center overflow-hidden sm:h-[30vh] sm:w-[400px]">
+                <div className="relative h-full w-full overflow-hidden bg-[#13162d] lg:rounded-3xl">
                   <Image
-                    height={300}
-                    width={464}
-                    src={img}
-                    alt={title}
-                    className="absolute bottom-0 z-10"
+                    height={250}
+                    width={450}
+                    src="/bg.png"
+                    alt="bg-img"
                   />
                 </div>
 
-                <h1 className="line-clamp-1 text-base font-bold md:text-xl lg:text-2xl">
-                  {title}
-                </h1>
+                <Image
+                  height={230}
+                  width={360}
+                  src={img}
+                  alt={title}
+                  className="absolute bottom-0 z-10"
+                />
+              </div>
 
-                <p className="line-clamp-2 text-sm font-light lg:text-xl lg:font-normal">
-                  {des}
-                </p>
+              <h1 className="line-clamp-1 text-sm font-bold md:text-lg lg:text-xl">
+                {title}
+              </h1>
 
-                <div className="mb-3 mt-7 flex items-center justify-between">
-                  <div className="flex items-center">
-                    {iconLists.map((icon, i) => (
-                      <div
-                        key={icon}
-                        className="flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.2] bg-black lg:h-10 lg:w-10"
-                        style={{
-                          transform: `translateX(-${5 * i * 2}px)`,
-                        }}
-                      >
-                        <Image
-                          height={40}
-                          width={40}
-                          src={icon}
-                          alt={icon}
-                          className="p-2"
-                        />
-                      </div>
-                    ))}
-                  </div>
+              <p className="line-clamp-2 text-xs font-light lg:text-sm lg:font-normal">
+                {des}
+              </p>
 
-                  <div className="flex items-center justify-center">
-                    <Link
-                      href={sourceCode}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="flex text-sm text-purple md:text-xs lg:text-xl"
+              <div className="mb-3 mt-6 flex items-center justify-between w-full">
+                <div className="flex items-center">
+                  {iconLists.map((icon, i) => (
+                    <div
+                      key={icon}
+                      className="flex h-6 w-6 items-center justify-center rounded-full border border-white/[0.2] bg-black lg:h-7 lg:w-7"
+                      style={{
+                        transform: `translateX(-${5 * i * 2}px)`,
+                      }}
                     >
-                      Source Code
-                    </Link>
-
-                    <FaLocationArrow className="ms-3" color="#cbacf9" />
-                  </div>
+                      <Image
+                        height={28}
+                        width={28}
+                        src={icon}
+                        alt={icon}
+                        className="p-1"
+                      />
+                    </div>
+                  ))}
                 </div>
-              </PinContainer>
-            </div>
-          )
-        )}
+
+                <div className="flex items-center justify-center">
+                  <Link
+                    href={sourceCode}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="flex text-xs text-purple hover:underline md:text-sm lg:text-lg"
+                  >
+                    Source Code
+                  </Link>
+
+                  <FaLocationArrow className="ms-3" color="#cbacf9" />
+                </div>
+              </div>
+            </PinContainer>
+          </div>
+        ))}
       </div>
     </section>
   );

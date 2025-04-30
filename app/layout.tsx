@@ -1,9 +1,10 @@
+// RootLayout.tsx
+
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
 
 import { siteConfig } from "@/config";
-
 import { ThemeProvider } from "./provider";
 
 import "./globals.css";
@@ -17,10 +18,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = siteConfig;
 
+
 const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} relative`}>
         <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
           {children}
         </ThemeProvider>
