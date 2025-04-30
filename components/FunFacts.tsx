@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGamepad, FaBookOpen, FaGuitar, FaGlobeAmericas } from 'react-icons/fa';
+import { FaBookOpen, FaGuitar, FaGlobeAmericas } from 'react-icons/fa';
 import { SiPubg } from 'react-icons/si';
 import { Button } from '@/components/ui/moving-borders';
 
