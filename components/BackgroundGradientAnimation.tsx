@@ -24,8 +24,8 @@ export const BackgroundGradientAnimation = ({
 
   // Set CSS variables based on the mode (dark or light)
   useEffect(() => {
+    // We ensure this code runs only on the client side (after initial render)
     if (typeof window !== "undefined") {
-      // This ensures that the code only runs on the client side
       const mode = isDarkMode ? "dark" : "light";
       document.body.classList.toggle("dark", isDarkMode);
 
