@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useEffect, useRef } from "react";
 
 export const BackgroundGradientAnimation = ({
@@ -26,8 +24,9 @@ export const BackgroundGradientAnimation = ({
 
   // Set CSS variables based on the mode (dark or light)
   useEffect(() => {
-    const mode = isDarkMode ? "dark" : "light";
     if (typeof window !== "undefined") {
+      // This ensures that the code only runs on the client side
+      const mode = isDarkMode ? "dark" : "light";
       document.body.classList.toggle("dark", isDarkMode);
 
       // Set custom variables for light/dark mode
