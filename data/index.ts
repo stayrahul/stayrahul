@@ -1,4 +1,3 @@
-import { links } from "@/config";
 
 
 export const navItems = [

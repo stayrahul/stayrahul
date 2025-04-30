@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaLocationArrow } from "react-icons/fa6";
 import { IoCallOutline } from "react-icons/io5";
 
 
-import { links } from "@/config";
+
 const ownerEmail = "rahul7926963@gmail.com"; // Replace with the actual email
 export const Footer = () => {
   return (
