@@ -27,21 +27,23 @@ export const BackgroundGradientAnimation = ({
   // Set CSS variables based on the mode (dark or light)
   useEffect(() => {
     const mode = isDarkMode ? "dark" : "light";
-    document.body.classList.toggle("dark", isDarkMode);
+    if (typeof window !== "undefined") {
+      document.body.classList.toggle("dark", isDarkMode);
 
-    // Set custom variables for light/dark mode
-    document.body.style.setProperty(
-      "--gradient-background-start",
-      isDarkMode ? "rgb(108, 0, 162)" : "rgb(0, 122, 255)"
-    );
-    document.body.style.setProperty(
-      "--gradient-background-end",
-      isDarkMode ? "rgb(0, 17, 82)" : "rgb(255, 253, 253)"
-    );
-    document.body.style.setProperty(
-      "--pointer-color",
-      isDarkMode ? "140, 100, 255" : "255, 100, 100"
-    );
+      // Set custom variables for light/dark mode
+      document.body.style.setProperty(
+        "--gradient-background-start",
+        isDarkMode ? "rgb(108, 0, 162)" : "rgb(0, 122, 255)"
+      );
+      document.body.style.setProperty(
+        "--gradient-background-end",
+        isDarkMode ? "rgb(0, 17, 82)" : "rgb(255, 253, 253)"
+      );
+      document.body.style.setProperty(
+        "--pointer-color",
+        isDarkMode ? "140, 100, 255" : "255, 100, 100"
+      );
+    }
   }, [isDarkMode]);
 
   // Smooth pointer animation
