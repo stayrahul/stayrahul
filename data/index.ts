@@ -12,8 +12,9 @@ export const gridItems = [
     id: 1,
     title: "Class 11 Student | Exploring the World of Web Development",
     description: "",
-    className: "relative overflow-hidden lg:col-span-3 md:col-span-4 md:row-span-3 lg:min-h-[25vh] min-h-[15vh] flex items-center justify-center",
-    imgClassName: "absolute inset-0 w-full h-full object-cover", // Covers the full box
+    className: "relative lg:col-span-3 md:col-span-4 md:row-span-3 lg:min-h-[25vh] min-h-[15vh] flex items-center justify-full",
+    imgClassName: "absolute w-full h-full object-cover transition-transform duration-500 hover:scale-110",
+
     titleClassName: "relative z-10 text-lg font-semibold text-center text-white",
     img: "/b1.svg",
     spareImg: "",
