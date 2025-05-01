@@ -1,3 +1,4 @@
+// This file contains the data for the portfolio website, including navigation items, grid items, achievements, projects, testimonials, work experience, and tech stack.  
 
 
 export const navItems = [
@@ -11,12 +12,13 @@ export const gridItems = [
     id: 1,
     title: "Class 11 Student | Exploring the World of Web Development",
     description: "",
-    className: "lg:col-span-3 md:col-span-4 md:row-span-3 lg:min-h-[25vh] min-h-[15vh] flex items-center justify-center",
-    imgClassName: "absolute inset-0 w-full h-full object-cover", // Cover the whole box
+    className: "relative overflow-hidden lg:col-span-3 md:col-span-4 md:row-span-3 lg:min-h-[25vh] min-h-[15vh] flex items-center justify-center",
+    imgClassName: "absolute inset-0 w-full h-full object-cover", // Covers the full box
     titleClassName: "relative z-10 text-lg font-semibold text-center text-white",
     img: "/b1.svg",
     spareImg: "",
   },
+  
   
   {
     id: 2,
