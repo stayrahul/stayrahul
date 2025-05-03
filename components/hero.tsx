@@ -1,31 +1,50 @@
-"use client";
+'use client'; // Make this a client-side component
 
-import Image from "next/image";
+import { useEffect, useState } from 'react';
 import { Spotlight } from "@/components/ui/spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export const Hero = () => {
-  return (
-    <section className="relative flex flex-col items-center justify-center pt-24 pb-16 overflow-hidden">
-      
-      {/* Background Effects */}
-      <div className="absolute inset-0 -z-10">
-        <Spotlight className="-left-10 -top-40 h-screen md:-left-32 md:-top-20" fill="white" />
-        <Spotlight className="left-full top-10 h-[80vh] w-[50vw]" fill="purple" />
-        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
-        <div className="absolute inset-0 bg-white bg-grid-black/[0.1] dark:bg-black-100 dark:bg-grid-white/[0.02]" />
-        <div className="pointer-events-none absolute inset-0 bg-white/30 backdrop-blur-sm [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black)] dark:bg-black-100" />
-      </div>
+  const [isClient, setIsClient] = useState(false);
 
-      {/* Main Content */}
-      <motion.div 
+  useEffect(() => {
+    setIsClient(true); // This ensures the component is rendered on the client side
+  }, []);
+
+  if (!isClient) return null; // Return nothing on the server side
+
+  return (
+    <div className="pb-20 pt-36">
+    <div>
+      <Spotlight
+        className="-left-10 -top-40 h-screen md:-left-32 md:-top-20"
+        fill="white"
+      />
+      <Spotlight
+        className="left-full top-10 h-[80vh] w-[50vw]"
+        fill="purple"
+      />
+      <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+    </div>
+
+    <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.2] dark:bg-black-100 dark:bg-grid-white/[0.03]">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
+    </div>
+
+    <div className="relative z-10 my-20 flex justify-center">
+      <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
+      
+
+        {/* Main Content */}
+        <motion.div 
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="relative z-10 flex flex-col items-center justify-center text-center px-6"
-      >
-        
+        >
+      
         {/* Profile Image */}
         <motion.div 
           initial={{ scale: 0 }}
@@ -37,8 +56,8 @@ export const Hero = () => {
           <Image
             src="/profile.png"
             alt="Rahul Kushwaha"
-            width={220}  
-            height={220} 
+            width={240}  
+            height={240} 
             className="rounded-full border-4 border-blue-500 shadow-2xl transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-blue-400 via-purple-500 to-pink-500 opacity-0 blur-lg transition duration-500 group-hover:opacity-70" />
@@ -80,6 +99,8 @@ export const Hero = () => {
           </svg>
         </div>
       </motion.div>
-    </section>
+        </div>
+      </div>
+    </div>
   );
 };

@@ -16,7 +16,7 @@ export const DevicesSection = () => {
           {/* Device 1 */}
           <Button
             borderRadius="1.25rem"
-            className="flex flex-col items-center justify-center w-[300px] p-6 bg-white/5 backdrop-blur-md text-white shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+            className="flex flex-col items-center justify-center w-[300px] p-4 bg-white/5 backdrop-blur-md text-white shadow-md hover:scale-105 hover:shadow-lg transition-all"
             duration={Math.floor(Math.random() * 10000 + 10000)}
           >
             <Image
@@ -37,7 +37,7 @@ export const DevicesSection = () => {
           {/* Device 2 */}
           <Button
             borderRadius="1.25rem"
-            className="flex flex-col items-center justify-center w-[300px] p-6 bg-white/5 backdrop-blur-md text-white shadow-md hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out"
+            className="flex flex-col items-center justify-center w-[300px] p-4 bg-white/5 backdrop-blur-md text-white shadow-md hover:scale-105 hover:shadow-lg transition-all"
             duration={Math.floor(Math.random() * 10000 + 10000)}
           >
             <Image

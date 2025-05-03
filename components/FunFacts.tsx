@@ -1,58 +1,68 @@
+'use client';
+
 import React from 'react';
 import { FaBookOpen, FaGuitar, FaGlobeAmericas } from 'react-icons/fa';
 import { SiPubg } from 'react-icons/si';
 import { Button } from '@/components/ui/moving-borders';
 
 const FunFacts: React.FC = () => {
+  const duration = Math.floor(Math.random() * 10000 + 10000);
+
   return (
-    <section className="fun-facts py-10 px-5 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600">
-      <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-8">
-        🎉 Fun <span className="text-yellow-300">Facts</span> About Me!
+    <section id="funfacts" className="py-16 px-4 sm:px-8 bg-transparent">
+      <h2 className="heading text-center text-base sm:text-lg md:text-xl">
+        🎉 Fun <span className="text-purple">Facts</span> About Me
       </h2>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+      <div className="grid gap-8 sm:grid-cols-2 mt-10">
         <Button
-          borderRadius="1rem"
-          className="flex-1 border-neutral-200 text-white dark:border-slate-800"
-          duration={12000}
+          borderRadius="1.25rem"
+          duration={duration}
+          className="flex flex-col items-start p-6 bg-white/5 backdrop-blur-md text-white shadow-md hover:scale-105 transition-all"
         >
-          <div className="flex items-center gap-3 p-4">
-            <SiPubg className="text-xl text-yellow-400" />
-            <span className="text-sm sm:text-base font-medium">I am a passionate PUBG Mobile player.</span>
-          </div>
-        </Button>
-
-        <Button
-          borderRadius="1rem"
-          className="flex-1 border-neutral-200 text-white dark:border-slate-800"
-          duration={12000}
-        >
-          <div className="flex items-center gap-3 p-4">
-            <FaBookOpen className="text-xl text-green-300" />
-            <span className="text-sm sm:text-base font-medium">I love reading about technology and AI.</span>
-          </div>
-        </Button>
-
-        <Button
-          borderRadius="1rem"
-          className="flex-1 border-neutral-200 text-white dark:border-slate-800"
-          duration={12000}
-        >
-          <div className="flex items-center gap-3 p-4">
-            <FaGuitar className="text-xl text-pink-400" />
-            <span className="text-sm sm:text-base font-medium">I play the guitar in my free time.</span>
-          </div>
-        </Button>
-
-        <Button
-          borderRadius="1rem"
-          className="flex-1 border-neutral-200 text-white dark:border-slate-800"
-          duration={12000}
-        >
-          <div className="flex items-center gap-3 p-4">
-            <FaGlobeAmericas className="text-xl text-blue-300" />
+          <div className="flex items-center gap-4">
+            <SiPubg className="text-2xl text-yellow-400" />
             <span className="text-sm sm:text-base font-medium">
-              I enjoy traveling and experiencing new cultures.
+              I’m a passionate PUBG Mobile player 🎮.
+            </span>
+          </div>
+        </Button>
+
+        <Button
+          borderRadius="1.25rem"
+          duration={duration}
+          className="flex flex-col items-start p-6 bg-white/5 backdrop-blur-md text-white shadow-md hover:scale-105 transition-all"
+        >
+          <div className="flex items-center gap-4">
+            <FaBookOpen className="text-2xl text-green-300" />
+            <span className="text-sm sm:text-base font-medium">
+              I love diving into books about AI and tech 📘.
+            </span>
+          </div>
+        </Button>
+
+        <Button
+          borderRadius="1.25rem"
+          duration={duration}
+          className="flex flex-col items-start p-6 bg-white/5 backdrop-blur-md text-white shadow-md hover:scale-105 transition-all"
+        >
+          <div className="flex items-center gap-4">
+            <FaGuitar className="text-2xl text-pink-400" />
+            <span className="text-sm sm:text-base font-medium">
+              I enjoy playing guitar during my chill time 🎸.
+            </span>
+          </div>
+        </Button>
+
+        <Button
+          borderRadius="1.25rem"
+          duration={duration}
+          className="flex flex-col items-start p-6 bg-white/5 backdrop-blur-md text-white shadow-md hover:scale-105 transition-all"
+        >
+          <div className="flex items-center gap-4">
+            <FaGlobeAmericas className="text-2xl text-blue-300" />
+            <span className="text-sm sm:text-base font-medium">
+              Exploring new places and cultures excites me 🌍.
             </span>
           </div>
         </Button>
