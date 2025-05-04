@@ -23,7 +23,7 @@ import  DevStates  from "@/components/DevStats";
 import  ChatBot  from "@/components/ChatBot";
 import { FloatingNav } from "@/components/ui/floating-nav";
 import { navItems } from "@/data";
-
+import  TypingHeader  from "@/components/TypingHeader";
 
 const MainPage = () => {
   return (
@@ -39,7 +39,7 @@ const MainPage = () => {
         <Lang />
         <Skills />
         <DevStates />
-
+        <TypingHeader />
         <Hobbies />
         <RecentProjects />
         <Achievements />
