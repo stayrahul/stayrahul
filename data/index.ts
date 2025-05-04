@@ -141,17 +141,17 @@ export const projects = [
     id: "chatbot",
     title: "ChatBot",
     des: "A conversational AI chatbot using natural language understanding. Built with modern web tools and deployed for real-time interaction.",
-    img: "/vercel1.svg", // Add an image for preview (place in your public/projects folder)
+    img: "/vercel1.svg",
     iconLists: [
       "/re.svg",
       "/git.svg",
       "/node1.svg",
     ],
-    link: "https://my-awesome-chatbot-two-xi.vercel.app", // Optional live demo URL (replace if you deploy it)
+    link: "https://my-awesome-chatbot-two-xi.vercel.app",
     sourceCode: "https://github.com/stayrahul/ChatBot"
   }
- 
-] as const;
+];
+
 
 export const testimonials = [
   {
