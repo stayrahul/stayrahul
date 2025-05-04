@@ -5,7 +5,7 @@ const ThankYouSection: React.FC = () => {
   return (
     <section id="thank-you" className="py-10">
       <h1 className="heading text-center text-lg">
-        Thank You <span className="text-purple">for Visiting!</span>
+        Thank You <span className="text-purple">for Visiting!🫰</span>
       </h1>
 
       <div className="mt-8 grid w-full grid-cols-1 gap-6 lg:grid-cols-1">

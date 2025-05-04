@@ -16,18 +16,19 @@ import { ReachOut } from "@/components/ReachOut";
 import SocialMediaSection from "@/components/SocialMediaSection";
 import { Contact } from "@/components/contact";
 import ThankYouSection from "@/components/ThankYouSection";
-import  VisitorCounter  from "@/components/VisitorCounter";
 import FunFacts from "@/components/FunFacts";
+import  BuiltWith from "@/components/BuiltWith";
 import { Footer } from "@/components/footer";
-import  DevStates  from "@/components/DevStats";
-import  ChatBot  from "@/components/ChatBot";
+import DevStates from "@/components/DevStats";
+import ChatBot from "@/components/ChatBot";
 import { FloatingNav } from "@/components/ui/floating-nav";
 import { navItems } from "@/data";
-import  TypingHeader  from "@/components/TypingHeader";
+
 
 const MainPage = () => {
   return (
-    <main className="relative mx-auto flex flex-col items-center justify-center overflow-clip bg-black-100 px-5 sm:px-10">      {/* Floating Navbar */}
+    <main className="relative mx-auto flex flex-col items-center justify-center overflow-clip bg-black-100 px-5 sm:px-10">      
+      {/* Floating Navbar */}
       <FloatingNav navItems={navItems} />
 
       {/* Page Content */}
@@ -39,7 +40,7 @@ const MainPage = () => {
         <Lang />
         <Skills />
         <DevStates />
-        <TypingHeader />
+        <BuiltWith />
         <Hobbies />
         <RecentProjects />
         <Achievements />
@@ -51,7 +52,6 @@ const MainPage = () => {
         <SocialMediaSection />
         <Contact />
         <ThankYouSection />
-        <VisitorCounter /> {/* Added VisitorCounter component */}
       </section>
 
       {/* Footer */}

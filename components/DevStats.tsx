@@ -1,7 +1,6 @@
-'use client';
+import { Button } from './ui/moving-borders';
 
-import React from "react";
-import { Button } from "@/components/ui/moving-borders";
+
 
 const DevStats = () => {
   const duration = Math.floor(Math.random() * 10000 + 10000);
@@ -14,7 +13,6 @@ const DevStats = () => {
 
       <div className="flex flex-col items-center gap-8 mt-8">
         <div className="flex justify-center gap-8 flex-wrap">
-
           {/* GitHub Stats */}
           <Button
             borderRadius="1.25rem"
@@ -54,6 +52,8 @@ const DevStats = () => {
             />
           </Button>
 
+          {/* TypingHeader has been removed */}
+          {/* <TypingHeader /> */}
         </div>
       </div>
     </section>

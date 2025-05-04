@@ -10,7 +10,7 @@ const FunFacts: React.FC = () => {
 
   return (
     <section id="funfacts" className="py-16 px-4 sm:px-8 bg-transparent">
-      <h2 className="heading text-center text-base sm:text-lg md:text-xl">
+      <h2 className="heading text-3xl text-center text-base sm:text-lg md:text-xl">
         🎉 Fun <span className="text-purple">Facts</span> About Me
       </h2>
 
@@ -23,7 +23,7 @@ const FunFacts: React.FC = () => {
           <div className="flex items-center gap-4">
             <SiPubg className="text-2xl text-yellow-400" />
             <span className="text-sm sm:text-base font-medium">
-              I’m a passionate PUBG Mobile player 🎮.
+              I’m a passionate PUBG Mobile player.
             </span>
           </div>
         </Button>
@@ -36,7 +36,7 @@ const FunFacts: React.FC = () => {
           <div className="flex items-center gap-4">
             <FaBookOpen className="text-2xl text-green-300" />
             <span className="text-sm sm:text-base font-medium">
-              I love diving into books about AI and tech 📘.
+              I love diving into books about AI and tech.
             </span>
           </div>
         </Button>
@@ -49,7 +49,7 @@ const FunFacts: React.FC = () => {
           <div className="flex items-center gap-4">
             <FaGuitar className="text-2xl text-pink-400" />
             <span className="text-sm sm:text-base font-medium">
-              I enjoy playing guitar during my chill time 🎸.
+              I enjoy playing guitar during my chill time.
             </span>
           </div>
         </Button>
@@ -62,7 +62,7 @@ const FunFacts: React.FC = () => {
           <div className="flex items-center gap-4">
             <FaGlobeAmericas className="text-2xl text-blue-300" />
             <span className="text-sm sm:text-base font-medium">
-              Exploring new places and cultures excites me 🌍.
+              Exploring new places and cultures excites me.
             </span>
           </div>
         </Button>

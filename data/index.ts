@@ -81,7 +81,7 @@ export const gridItems = [
     className: "relative lg:col-span-2 md:col-span-2 md:row-span-1 min-h-[12vh] flex items-center justify-center text-center",
     imgClassName: "absolute inset-0 w-full h-full object-cover opacity-20",
     titleClassName: "justify-center",
-    img: "/footer-grid.svg", // Background image for ID 7
+    img: "/heroo.jpg", // Background image for ID 7
     spareImg: "",
   },
 ] as const;
