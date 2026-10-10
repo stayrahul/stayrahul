@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-  <a href="https://stayrahul.me"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=F59E0B&center=true&vCenter=true&width=760&height=60&lines=%3E+Hi%2C+I'm+Rahul+Kushwaha+%E2%80%94+aka+%40stayrahul;%3E+Full-Stack+Developer+from+Nepal+%F0%9F%87%B3%F0%9F%87%B5;%3E+I+build+with+Next.js%2C+TypeScript+%26+Tailwind;%3E+Bridging+AI+with+modern+web+UIs+%F0%9F%A4%96;%3E+Turning+coffee+into+scalable+code+%E2%98%95" alt="Typing animation: Rahul Kushwaha, stayrahul, Full-Stack Developer Nepal" /></a>
+  <a href="https://rahul.rest"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=F59E0B&center=true&vCenter=true&width=760&height=60&lines=%3E+Hi%2C+I'm+Rahul+Kushwaha+%E2%80%94+aka+%40stayrahul;%3E+Full-Stack+Developer+from+Nepal+%F0%9F%87%B3%F0%9F%87%B5;%3E+I+build+with+Next.js%2C+TypeScript+%26+Tailwind;%3E+Bridging+AI+with+modern+web+UIs+%F0%9F%A4%96;%3E+Turning+coffee+into+scalable+code+%E2%98%95" alt="Typing animation: Rahul Kushwaha, stayrahul, Full-Stack Developer Nepal" /></a>
 </p>
 
 <p align="center">
-  <a href="https://rahul.rest"><img src="https://img.shields.io/badge/Portfolio-stayrahul.me-0ea5e9?style=for-the-badge&logo=vercel&logoColor=white" alt="Rahul Kushwaha Portfolio" /></a>
+  <a href="https://rahul.rest"><img src="https://img.shields.io/badge/Portfolio-rahul.rest-0ea5e9?style=for-the-badge&logo=vercel&logoColor=white" alt="Rahul Kushwaha Portfolio" /></a>
   <a href="mailto:rahul7926963@gmail.com"><img src="https://img.shields.io/badge/Gmail-Hire%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Rahul Kushwaha" /></a>
   <a href="https://instagram.com/stayrahul"><img src="https://img.shields.io/badge/Instagram-@stayrahul-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="stayrahul Instagram" /></a>
   <a href="https://github.com/stayrahul?tab=followers"><img src="https://img.shields.io/github/followers/stayrahul?label=Follow%20@stayrahul&style=for-the-badge&logo=github&color=6366f1" alt="Follow stayrahul on GitHub" /></a>
@@ -104,7 +104,7 @@ const stayrahul = {
 
 | Platform | Link |
 |----------|------|
-| 🌐 Portfolio | [stayrahul.me](https://rahul.rest) |
+| 🌐 Portfolio | [rahul.rest](https://rahul.rest) |
 | 💻 GitHub | [github.com/stayrahul](https://github.com/stayrahul) |
 | 📸 Instagram | [@stayrahul](https://instagram.com/stayrahul) |
 | 📧 Email | [rahul7926963@gmail.com](mailto:rahul7926963@gmail.com) |
@@ -119,7 +119,7 @@ const stayrahul = {
 </p>
 
 <p align="center">
-  <a href="https://stayrahul.me"><img src="https://img.shields.io/badge/Visit%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Rahul Kushwaha portfolio" /></a>
+  <a href="https://rahul.rest"><img src="https://img.shields.io/badge/Visit%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Rahul Kushwaha portfolio" /></a>
   <a href="mailto:rahul7926963@gmail.com"><img src="https://img.shields.io/badge/Say%20Hello-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email stayrahul" /></a>
 </p>
 
@@ -135,7 +135,7 @@ const stayrahul = {
 <summary><sub>🏷️ Keywords</sub></summary>
 <sub>
 
-Rahul Kushwaha • stayrahul • stayrahul.me • Full-Stack Developer Nepal • Frontend Developer Nepal • Next.js Developer • React Developer • TypeScript • Tailwind CSS • T3 Stack • AI Web Developer • MedusaJS • Kathmandu Nepal Developer
+Rahul Kushwaha • stayrahul • rahul.rest • Full-Stack Developer Nepal • Frontend Developer Nepal • Next.js Developer • React Developer • TypeScript • Tailwind CSS • T3 Stack • AI Web Developer • MedusaJS • Kathmandu Nepal Developer
 
 </sub>
 </details>
